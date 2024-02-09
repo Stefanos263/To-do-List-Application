@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="styles.css"> <!-- συνδεση με το  CSS file  μου -->
+</head>
+<body>
+
+<div class="container">
+  <h1>To-Do List</h1>
+
+  <!-- φορμα για προσθηκη νεων tasks -->
+  <form id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Enter task title" required>
+    <textarea id="taskDescription" placeholder="Enter task description"></textarea>
+    <select id="taskCategory">
+      <option value="">Select category</option>
+      <!-- προσθηκη επιλογων  δυναμικα αναλογα με τις διαθεσιμες κατηγοριες -->
+    </select>
+    <input type="datetime-local" id="taskReminder" placeholder="Set reminder">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <!-- Task λιστα -->
+  <ul id="taskList">
+    <!-- Tasks θα προστιθονται δυναμικα εδω -->
+  </ul>
+</div>
+
+<script src="script.js"></script> <!-- συνδεση με το  JavaScript file μου -->
+</body>
+</html>

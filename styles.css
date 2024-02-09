@@ -1,0 +1,121 @@
+/*  default margin and padding  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* styles για την επικεφαλιδα  */
+  h1 {
+    text-align: center;
+    color: #0514de;
+    margin-bottom: 20px;
+  }
+  
+  /*  styles για την φορμα */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form textarea,
+  form select,
+  form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form input[type="datetime-local"],
+  form select {
+    font-size: 14px;
+  }
+  
+  form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /*  styles για την λιστα */
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  li.complete {
+    background-color: #d3f1b5; /* το χρωμα για την ολοκληρωση ενος task */
+  }
+  
+  li span.category {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  li span.reminder {
+    font-size: 12px;
+    color: #777;
+    display: block;
+  }
+  
+  li button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  
